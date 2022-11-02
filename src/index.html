@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1,  maximum-scale=1, user-scalable=0">
+
+  <!-- todo -->
+  <title>Parcel 2 PostHTML Components</title>
+
+  <!-- todo -->
+  <meta name="description" content="A sample project for using Parcel 2 with PostHTML Components">
+
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="scss/main.scss">
+</head>
+
+<body>
+  <x-layout>
+    <fill:header>
+      Example Header
+    </fill:header>
+
+    <fill:body>
+      <div class="container">
+        <div>
+          <p>
+            Hello, world!
+          </p>
+          <p>
+            This is an example repository using
+            <a href="https://github.com/parcel-bundler/parcel" target="_blank">Parcel 2</a>,
+            <a href="https://github.com/posthtml/posthtml">PostHTML</a>, and
+            <a href="https://github.com/posthtml/posthtml">PostHTML Components</a>.
+          </p>
+          <p>
+            Check out this repository's README for more information.
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <p>
+          This is an example component:
+        </p>
+        <x-button id="ExampleButton" label="Click me!"></x-button>
+      </div>
+      <div class="container">
+        <p id="ButtonClickCounter">
+          You've clicked the button 0 times!
+        </p>
+      </div>
+    </fill:body>
+
+    <fill:footer>
+      &copy; Example Company
+    </fill:footer>
+  </x-layout>
+  <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

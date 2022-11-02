@@ -1,0 +1,48 @@
+$header-height: 6rem;
+$footer-height: 4rem;
+
+html,
+body {
+  margin: 0;
+}
+
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  background-color: lightblue;
+  height: $header-height;
+}
+
+footer {
+  background-color: lightgreen;
+  height: $footer-height;
+}
+
+main {
+  height: calc(100vh - $header-height - $footer-height);
+
+  p {
+    margin: 0;
+    padding: 0.5rem 1rem;
+  }
+
+  div.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+}
+
+a {
+  color: dodgerblue;
+}
+
+button {
+  padding: 0.5rem 1rem;
+}

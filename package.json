@@ -1,0 +1,18 @@
+{
+  "name": "parcel-2-posthtml-components",
+  "version": "0.0.1",
+  "description": "A sample project for using Parcel 2 with PostHTML Components",
+  "scripts": {
+    "build": "rm -rf dist && parcel build src/index.html && for file in $(cat .local/copy-on-build.txt | sed 's/\\W$//g'); do cp \"src/$file\" dist/; done ",
+    "dev": "concurrently 'node .local/watcher.js' 'parcel src/index.html --port 1234 --hmr-port 1235 --no-cache'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brice Hartmann <brice@bricehartmann.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
+    "concurrently": "^7.5.0",
+    "parcel": "^2.7.0",
+    "posthtml-component": "^1.0.0-beta.12"
+  }
+}
